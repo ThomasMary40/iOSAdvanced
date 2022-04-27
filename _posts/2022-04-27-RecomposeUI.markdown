@@ -1,8 +1,42 @@
 ---
 layout: post
-title: "Composite Datasource"
+title: "Recomposing UI"
 date: 2022-04-27 16:41:27 +0200
-categories: Datasource
+categories: UI
 ---
 
-Dealing with datasource can be very annoying. By example :
+Sample of recomposing UI.
+Note here we do it in a button, but you can trigger event.
+
+```swift
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+
+    window = UIWindow(windowScene: windowScene)
+    window?.rootViewController = makeFreeUI()
+    window?.makeKeyAndVisible()
+}
+
+private func makeFreeUI() -> UIViewController {
+    let vc = UIViewController()
+
+    vc.view.backgroundColor = .yellow
+    vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start subscription", primaryAction: UIAction{[weak self] _ in
+        self?.window?.rootViewController = self?.makePaidUI()
+    })
+
+    return UINavigationController(rootViewController: vc)
+}
+
+private func makePaidUI() -> UIViewController {
+    let vc = UIViewController()
+
+    vc.view.backgroundColor = .green
+    vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "End subscription", primaryAction: UIAction{[weak self] _ in
+        self?.window?.rootViewController = self?.makeFreeUI()
+    })
+
+    return UINavigationController(rootViewController: vc)
+}
+```
