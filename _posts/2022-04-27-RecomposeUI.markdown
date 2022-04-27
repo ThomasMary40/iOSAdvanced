@@ -45,9 +45,11 @@ private func makePaidUI() -> UIViewController {
 First Launch
 : rootViewController is a free UI
 
+
 makeFreeUI()
 : Create a free UI View Controller
 : Create a button bar item to switch to a paid UI
+
 
 makePaidUI()
 : Create a paid UI View Controller
@@ -56,4 +58,4 @@ makePaidUI()
 
 You can [download the sample project here][1]
 
-[1]:{{ site.url }}/downloads/recomposeui.zip
+[1]:{{ site.url }}/download/recomposeui.zip
