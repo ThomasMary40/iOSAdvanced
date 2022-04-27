@@ -56,4 +56,4 @@ makePaidUI()
 
 You can [download the sample project here][1]
 
-[1]:{{ site.url }}/download/recomposeui.zip
+[1]:{{ site.url }}/downloads/recomposeui.zip
