@@ -11,7 +11,7 @@ This sample show how to present fruits and vegetables in the same UITableView fr
 
 This is what (very beautiful) final result looks like :
 
-![Sample](./image/composite/composite_1.png)
+![Sample](https://thomasmary40.github.io/iOSAdvanced/image/composite/composite_1.png)
 
 Let's GO !
 
