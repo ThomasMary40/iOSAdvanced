@@ -175,4 +175,4 @@ Enjoy !
 You can [download the sample project here][1]
 
 [1]:{{ site.url }}/iOSAdvanced/download/composite_datasources.zip
-[2]:{{ site.url }}/iOSAdvanced/image/composite/composite_1.png
+[2]:./image/composite/composite_1.png
