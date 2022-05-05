@@ -13,18 +13,26 @@ Instead of a vague definition, let's show it by Swift examples
 
 ## 1. Making your code readable is as important as making it executable
 
-# Don't :
+# Unclean :
 
 ```swift
 var i : Int // number of carrots in soup
 var y : Int // number of fruits in my cart
+
+func xyz(a:Int, b:Int) -> [Abc] {
+    // function code
+}
 ```
 
-# Do :
+# Clean :
 
 ```swift
 var numberOfCarrotsInSoup : Int
 var numberOfFruitsInMyCart : Int
+
+func getSoupsWithCaloriesBetween(_ minCalories:Int, _ maxCalories :Int) -> [Soup] {
+    // function code
+}
 ```
 
 ## 2. Functions should do one thing
