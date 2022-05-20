@@ -6,6 +6,4 @@ permalink: /about/
 
 About Me Section :
 
-// Todo
-
-</end>
+iOS developer since 2011.
