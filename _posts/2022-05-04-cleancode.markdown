@@ -119,7 +119,7 @@ func testLongRecipe() {
 ```swift
 func testCompareVegetables() {
     let carrot = Carrot()
-    let Turnip = Turnip()
+    let turnip = Turnip()
 
     XCTAssertFalse(carrot.compare(turnip) == 0 ) // carrot == turnip
     XCTAssertTrue(carrot.compare(turnip) != 0 )  // carrot != Turnip
